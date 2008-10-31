@@ -10,7 +10,12 @@ class DisplayParser
 			end
 		
 		elsif digits[1] == "|_ "
-			5
+			
+			if digits[2] == "|_|"
+				6
+			else
+				5
+			end
 			
     else
 	
