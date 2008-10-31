@@ -3,31 +3,27 @@ class DisplayParser
   def self.parse(digits)
     if digits[0] == "   "
 			
-			if digits[1] == "  |"
-      	1
-			else
-				4
+			case
+				when digits[1] == "  |" then 1
+				else 4
 			end
 		
 		else
 			
 			if digits[1] == "|_ "
 			
-				if digits[2] == "|_|"
-					6
-				else
-					5
+				case
+					when digits[2] == "|_|" then	6
+					else 5
 				end
 			
 	    else
 	
-				if digits[2] == "|_ "
-	      	2
-				elsif digits[2] == " _|"
-					3
-				else
-					7
-	    	end
+				case
+				when digits[2] == "|_ " then 2
+				when digits[2] == " _|" then 3
+				else 7
+				end	
 
 			end
 			
