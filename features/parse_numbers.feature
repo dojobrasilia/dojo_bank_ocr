@@ -9,6 +9,11 @@ Feature: Parse Numbers
 		Then the result should be 1
 		
 	Scenario: Parse a 2
-		Given I have the inputs " _ ", " _|", "|_" 
+		Given I have the inputs " _ ", " _|", "|_ " 
 		When I parse the input
 		Then the result should be 2
+
+	Scenario: Parse a 3
+		Given I have the inputs " _ ", " _|", " _|" 
+		When I parse the input
+		Then the result should be 3
