@@ -17,3 +17,8 @@ Feature: Parse Numbers
 		Given I have the inputs " _ ", " _|", " _|" 
 		When I parse the input
 		Then the result should be 3
+
+	Scenario: Parse a 4
+		Given I have the inputs "   ", "|_|", "  |" 
+		When I parse the input
+		Then the result should be 4
