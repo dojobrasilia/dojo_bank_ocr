@@ -7,8 +7,11 @@ class DisplayParser
 			else
 				4
 			end
+		
     elsif digits[2] == "|_ "
       2
+		elsif digits[1] == "|_ "
+			5
 		else
 			3
     end
