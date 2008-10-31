@@ -23,6 +23,7 @@ class DisplayParser
 				case
 					when digits[2] == "|_ " then 2
 					when digits[2] == " _|" then 3
+					when digits[2] == "|_|" then 8
 					else 7
 				end	
 					
