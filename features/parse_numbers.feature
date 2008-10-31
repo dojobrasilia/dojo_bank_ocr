@@ -47,3 +47,9 @@ Feature: Parse Numbers
 		Given I have the inputs " _ ", "|_|", " _|" 
 		When I parse the input
 		Then the result should be 9
+
+	Scenario: Parse a 0
+		Given I have the inputs " _ ", "| |", "|_|" 
+		When I parse the input
+		Then the result should be 0
+
