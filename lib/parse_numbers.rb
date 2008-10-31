@@ -22,7 +22,11 @@ class DisplayParser
 				7
 
 			elsif digits[1] == "|_|"
-				8
+				
+				case
+					when digits[2] == "|_|" then 8
+					else 9
+				end
 				
 			else
 					
