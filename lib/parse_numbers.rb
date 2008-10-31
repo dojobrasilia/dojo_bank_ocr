@@ -33,6 +33,7 @@ class DisplayParser
 				case
 					when digits[2] == "|_ " then 2
 					when digits[2] == " _|" then 3
+					else 0
 				end	
 					
 			end
@@ -40,5 +41,5 @@ class DisplayParser
 		end
 		
   end
-  
+
 end
