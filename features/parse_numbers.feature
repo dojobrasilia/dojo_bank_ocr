@@ -32,3 +32,8 @@ Feature: Parse Numbers
 		Given I have the inputs " _ ", "|_ ", "|_|" 
 		When I parse the input
 		Then the result should be 6
+
+	Scenario: Parse a 7
+		Given I have the inputs " _ ", "  |", "  |" 
+		When I parse the input
+		Then the result should be 7

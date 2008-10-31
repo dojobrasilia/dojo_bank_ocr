@@ -23,8 +23,10 @@ class DisplayParser
 	
 				if digits[2] == "|_ "
 	      	2
-				else
+				elsif digits[2] == " _|"
 					3
+				else
+					7
 	    	end
 
 			end
