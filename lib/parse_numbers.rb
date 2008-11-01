@@ -21,8 +21,11 @@ class DisplayParser
 			elsif digits[1] == "  |"
 				7
 
-			elsif digits[1] == "|_|"
+			elsif digits[1] == "| |"
+				0
 				
+			elsif digits[1] == "|_|"
+			
 				case
 					when digits[2] == "|_|" then 8
 					else 9
@@ -33,7 +36,6 @@ class DisplayParser
 				case
 					when digits[2] == "|_ " then 2
 					when digits[2] == " _|" then 3
-					else 0
 				end	
 					
 			end
