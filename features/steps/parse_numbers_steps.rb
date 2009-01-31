@@ -7,7 +7,7 @@ $:.unshift(File.dirname(__FILE__) + '/../../lib')
 require 'parse_numbers'
 
 
-Quando /^eu interpreto a entrada   (.+), (.+), (.+)$/ do |s1,s2,s3|
+When /^eu interpreto a entrada (.+), (.+), (.+)$/ do |s1,s2,s3|
 
   @result=DisplayParser.parse([ s1.gsub(/\"/, ""), 
 																s2.gsub(/\"/, ""), 

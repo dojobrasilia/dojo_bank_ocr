@@ -4,7 +4,7 @@ Funcionalidade: Decodificar Número em formato Display
   Eu quero fazer o parsing dos número em formato "display"
 
   Cenário: Interpretar o 1
-		Quando eu interpreto a entrada  "   ", "  |", "  |"
+		Quando eu interpreto a entrada "   ", "  |", "  |"
 		Então o resultado deve ser 1
 
   Cenário: Interpretar o 2
