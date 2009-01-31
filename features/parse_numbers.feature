@@ -1,45 +1,45 @@
-Feature: Parse Numbers
-	In order to interpet the numbers coded in "display" format
-	As a BDD learner
-	I want to parse numbers writen in "display" format
-	
-	Scenario: Parse a 1
-		When I parse the input "   ", "  |", "  |"
-		Then the result should be 1
-		
-	Scenario: Parse a 2
-		When I parse the input " _ ", " _|", "|_ " 
-		Then the result should be 2
+Funcionalidade: Decodificar Número em formato Display
+  Para aprender BDD
+  Como um aprendiz em BDD
+  Eu quero fazer o parsing dos número em formato "display"
 
-	Scenario: Parse a 3
-		When I parse the input " _ ", " _|", " _|" 
-		Then the result should be 3
+  Cenário: Interpretar o 1
+		Quando eu interpreto a entrada  "   ", "  |", "  |"
+		Então o resultado deve ser 1
 
-	Scenario: Parse a 4
-		When I parse the input "   ", "|_|", "  |" 
-		Then the result should be 4
+  Cenário: Interpretar o 2
+		Quando eu interpreto a entrada " _ ", " _|", "|_ " 
+		Então o resultado deve ser 2
 
-	Scenario: Parse a 5
-		When I parse the input " _ ", "|_ ", " _|" 
-		Then the result should be 5
+  Cenário: Interpretar o 3
+		Quando eu interpreto a entrada " _ ", " _|", " _|"  
+		Então o resultado deve ser 3
 
-	Scenario: Parse a 6
-		When I parse the input " _ ", "|_ ", "|_|" 
-		Then the result should be 6
+  Cenário: Interpretar o 4
+		Quando eu interpreto a entrada "   ", "|_|", "  |" 
+		Então o resultado deve ser 4
 
-	Scenario: Parse a 7
-		When I parse the input " _ ", "  |", "  |" 
-		Then the result should be 7
+  Cenário: Interpretar o 5
+		Quando eu interpreto a entrada " _ ", "|_ ", " _|" 
+		Então o resultado deve ser 5
 
-	Scenario: Parse a 8
-		When I parse the input " _ ", "|_|", "|_|" 
-		Then the result should be 8
+  Cenário: Interpretar o 6
+		Quando eu interpreto a entrada " _ ", "|_ ", "|_|" 
+		Então o resultado deve ser 6
 
-	Scenario: Parse a 9
-		When I parse the input " _ ", "|_|", " _|" 
-		Then the result should be 9
+  Cenário: Interpretar o 7
+		Quando eu interpreto a entrada " _ ", "  |", "  |" 
+		Então o resultado deve ser 7
 
-	Scenario: Parse a 0
-		When I parse the input " _ ", "| |", "|_|" 
-		Then the result should be 0
+  Cenário: Interpretar o 8
+		Quando eu interpreto a entrada  " _ ", "|_|", "|_|" 
+		Então o resultado deve ser 8
+
+  Cenário: Interpretar o 9
+		Quando eu interpreto a entrada " _ ", "|_|", " _|" 
+		Então o resultado deve ser 9
+
+  Cenário: Interpretar o 0
+		Quando eu interpreto a entrada " _ ", "| |", "|_|" 
+		Então o resultado deve ser 0
 
